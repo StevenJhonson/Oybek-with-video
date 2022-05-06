@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>section
+    </title>
+    <link href="css.css" rel="stylesheet">
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    background: #000;
+
+}
+video {
+    object-fit: cover;
+}
+h1  {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 5em;
+font-family: sans-serif;
+    letter-spacing: 0.2em;
+}
+h1 span {
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+@keyframes animate {
+0%{
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: motionBlur(10px);
+}
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: motionBlur(0);
+    }
+}
+h1 span:nth-child(1) {
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(2) {
+    animation-delay: 1.2s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 2.2s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 3s;
+}
+h1 span:nth-child(5) {
+    animation-delay: 3.5s;
+}
+.mane {
+    text-align: revert;
+    margin-left: 290px;
+    display: inline-block;
+    width: 790px;
+    margin-bottom: 100px;
+    margin-top: 107px;
+}
+</style>
+<body>
+<section>
+    <video autoplay class="mane" muted src="video/dim.mp4">
+    </video>
+    <h1>
+        <span>O</span>
+        <span>Y</span>
+        <span>B</span>
+        <span>E</span>
+        <span>K</span>
+    </h1>
+</section>
+</body>
+</html>
